@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LifeSum</string>
+    <string name="calories_per_serving">Calories per serving</string>
+    <string name="carbs">CARBS</string>
+    <string name="protein">PROTEIN</string>
+    <string name="fat">FAT</string>
+</resources>
