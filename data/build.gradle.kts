@@ -7,11 +7,10 @@ plugins {
 
 android {
     namespace = "com.alpersevindik.data"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 23
-        targetSdk = 32
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

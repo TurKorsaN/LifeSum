@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.alpersevindik.lifesum"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.alpersevindik.lifesum"
         minSdk = 23
-        targetSdk = 32
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

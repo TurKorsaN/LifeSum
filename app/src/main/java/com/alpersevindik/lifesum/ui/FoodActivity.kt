@@ -52,6 +52,7 @@ class FoodActivity : AppCompatActivity() {
                 is FoodViewModel.FoodState.Completed -> displayFoodValues(state.data)
                 FoodViewModel.FoodState.Failed -> showError()
                 FoodViewModel.FoodState.Loading -> showLoading()
+                FoodViewModel.FoodState.None -> Unit
             }
         }
 
