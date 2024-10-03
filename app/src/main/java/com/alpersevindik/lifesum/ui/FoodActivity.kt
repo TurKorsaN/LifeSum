@@ -3,6 +3,7 @@ package com.alpersevindik.lifesum.ui
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.activity.viewModels
@@ -18,6 +19,7 @@ class FoodActivity : AppCompatActivity() {
 
     private val title by lazy { findViewById<TextView>(R.id.title) }
     private val calorieValue by lazy { findViewById<TextView>(R.id.calorieValue) }
+    private val cardBackground by lazy { findViewById<View>(R.id.cardBackground) }
 
     private val carbsLayout by lazy { findViewById<ViewGroup>(R.id.carbsLayout) }
     private val carbsTitle by lazy { carbsLayout.findViewById<TextView>(R.id.title) }
@@ -44,6 +46,9 @@ class FoodActivity : AppCompatActivity() {
         carbsTitle.setText(R.string.carbs)
         proteinTitle.setText(R.string.protein)
         fatTitle.setText(R.string.fat)
+        cardBackground.setOnClickListener {
+            foodViewModel.hearShake()
+        }
     }
 
     private fun initData() {
